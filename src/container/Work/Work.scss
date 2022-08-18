@@ -1,0 +1,275 @@
+#work {
+    background-color: #141414;
+
+}
+
+
+#items {
+    margin-top: 2rem;
+    background-color: var(--white-color);
+    padding: 2rem 2rem;
+    // background: linear-gradient(45deg,
+    // var(--black-color) 0%,
+    // var(--black-color) 20%,
+    // var(--black-color) 20%,
+    // var(--black-color) 40%,
+    // var(--white-color) 40%,
+    // var(--white-color) 60%,
+    // var(--black-color) 60%, 
+    // var(--black-color) 80%, 
+    // var(--white-color) 80%);
+    border-radius: 5px;
+
+}
+.app__work {
+
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.app__work-filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 4rem 0 2rem;
+
+    .app__work-filter-item{
+        padding: 0.5rem 1rem;
+
+        background-color: var(--white-color);
+        color: var(--black-color);
+        font-weight: 400;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        border-bottom: solid var(--black-color) 5px;
+        border-top: solid var(--black-color) 5px;
+
+        margin: 0.5rem;
+
+        p{
+            color:black;
+        }
+
+        &:hover{
+            p {
+                color: white;
+            }
+            text-decoration:underline var(--secondary-color) 3px;
+            
+            background-color: #141414;
+            border-bottom: solid var(--secondary-color) 5px;
+            border-top: solid var(--secondary-color) 5px;
+            color: white;
+        }
+
+
+        @media screen and (min-width: 2000px) {
+            padding: 1rem 2rem;
+        }
+
+        @media screen and (max-width: 2000px) {
+            
+            p{
+                font-size: 1.2rem;
+                color:black;
+            }
+
+        }
+    }
+
+    .item-active{
+        background-color: #141414;
+        p{
+            color: white;
+            text-decoration:underline var(--secondary-color) 3px;
+            
+        }
+        border-bottom: solid var(--secondary-color) 5px;
+        border-top: solid var(--secondary-color) 5px;
+    }
+
+}
+
+.app__work-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+
+    .app__work-item{
+        width: 370px;
+        height: 100%;
+        flex-direction: column;
+        margin: 0.5rem;
+        padding: 1rem 1rem;
+        border-radius: 0.5rem;
+        
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(5.2px);
+        -webkit-backdrop-filter: blur(5.2px);
+                
+        h4,p {
+            color: #141414;
+        }
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover{
+            
+            box-shadow: 0 0 20px rgba($color: #0000, $alpha: 0.3);
+        }
+
+        @media screen and (min-width: 2000px) {
+            width: 470px;
+            padding: 1rem;
+            border-radius: 0.75rem;
+        }
+
+
+        @media screen and (max-width: 2000px) {
+            
+            h4{
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            width: 100%;
+            margin: 1rem;
+        }
+    }
+    
+}
+
+
+
+.app__work-img{
+    width: 100%;
+    height: 230px;
+
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+        object-fit:cover;
+    }
+
+    @media screen and (min-width: 2000px) {
+        height: 350px;
+        width: 100%;
+    }
+
+}
+
+.app__work-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 0.5rem;
+    opacity: 0;
+    transition: all 0.15s ease;
+
+    div{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: rgba($color: #000, $alpha: 0.8);
+        color: black;
+
+        margin: 1rem;
+        font-family: var(--font-base);
+        font-weight: 800;
+        cursor: pointer;
+
+        transition: all 0.15s ease;
+
+        svg {
+            width: 50%;
+            height: 50%;
+            color: var(--white-color);
+        }
+    }
+}
+
+
+.app__work-content {
+    padding: 0.5rem;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    h4 {
+        margin-top: 1rem;
+        line-height: 1.5;
+    }
+
+    p {
+        font-size: 1.3rem;
+        
+    }
+
+    .app__work-tag {
+        position: relative;
+        
+        padding: 0.5rem 1rem;
+        border-radius: 15px;
+        background-color: #ffff;
+        box-shadow: inset 0 0 20px rgba($color: #141414, $alpha: 0.1);
+        margin-top: -2rem;
+        
+
+        p {
+            font-size: 1.4rem;
+            color: #141414;
+        }
+    }
+
+    
+
+}
+
+.app__skills-items-div {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-items: flex-start;
+}
+
+
+.app__skills-item-logo {
+
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    img {
+        margin-left: 0px;
+        margin-right: 0.5rem;
+        box-shadow: inset 0 0 10px rgba($color: #141414, $alpha: 0.2);
+        border-radius: 10px;
+        padding: 0.5rem 0.5rem;
+        width: 4rem;
+    }
+
+    
+    
+}

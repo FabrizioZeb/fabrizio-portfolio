@@ -1,0 +1,328 @@
+#skills {
+    background-color: var(--black-color);
+    // background-color: var(--white-color);
+}
+
+
+.app__skills {
+
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+
+.app__skills-container{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 6rem 8rem;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    @media screen and (min-width: 2000px) {
+        min-width: 1850px;
+    }
+
+    @media screen and (max-width: 2000px) {
+        padding: 6rem 0rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.app-skills-container-tech{
+    width: 100%;
+    margin-right: 4rem;
+    @media screen and (max-width: 2000px) {
+        width: 100%;
+    }
+}
+
+.app-skills-container-works{
+    margin-left: 4rem;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width:1200px) {
+        margin-left: 0;
+    }
+}
+
+.app__skills-list {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 1rem;
+
+    @media screen and (max-width: 1200px) {
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.app__skills-types{
+
+    justify-content: flex-start;
+
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    h2 {
+        font-size: 1.5rem;
+        color: var(--black-color);
+        
+    }
+
+    @media screen and (max-width: 1200px) {
+
+        
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+
+        h2 {
+            font-size: 1.3rem;
+            color: var(--black-color);
+            
+        }
+    }
+}
+
+.app__skills-item-row {
+    // display: flex;
+    // flex-direction: row;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    @media screen and (max-width: 1200px) {
+        display: flex;
+        
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+}
+
+.app__skills-item {
+    
+
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+    margin: 0.75rem;
+    margin-left: 0;
+
+    transition: all 0.3s ease-in-out;
+
+    div {
+        box-shadow: inset 0 0 10px rgba($color: #828282, $alpha: 0.6);
+        width: 100px;
+        height: 100px;
+        border-radius: 5%;
+        background-color: #fef4f5;
+
+        img {
+            width: 50%;
+            height: 50%;
+        }
+
+
+        &:hover{
+            box-shadow: 0 0 25px #424242;
+        }
+
+        @media screen and (min-width: 2000px) {
+            width: 120px;
+            height: 120px;
+        }
+        @media screen and (max-width: 900px) {
+            width: 90px;
+            height: 90px;
+        }
+
+    }
+
+    p {
+        color: var(--black-color);
+        font-weight: 500;
+        margin-top: 0.2rem;
+    }
+
+    @media screen and (min-width: 2000px) {
+        margin: 0.2rem 0.1rem;
+
+        p {
+            font-size: 1.2rem;
+            margin-top: 0.1rem;
+        }
+    }
+
+}
+
+
+.app__skills-exp {
+
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 2rem;
+
+    @media screen and (max-width: 900px) {
+        margin-top: 2rem;
+    }
+}
+
+
+.app__skills-exp-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin: 1rem 0;
+}
+
+.app__skills-exp-work {
+    flex: 1;
+
+    .app__skills-exp-work {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        margin-bottom: 1rem;
+        cursor: pointer;
+
+        h4 {
+            color: var(--black-color);
+            font-weight: 500;
+        }
+
+        p {
+            font-weight: 400;
+            color: var(--gray-color);
+            margin-top: 5px;
+        }
+
+    }
+
+    
+}
+
+
+.change-view{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+
+    div{
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        border-bottom: solid var(--black-color) 5px;
+        border-top: solid var(--black-color) 5px; 
+        transition: all 0.2s ease;
+
+        padding: 1rem 1rem;
+        margin: 0 0.5rem;
+        &:hover{
+            background-color: #141414;
+            border-bottom: solid var(--secondary-color) 5px;
+            border-top: solid var(--secondary-color) 5px;
+            
+            h2 {
+                color: var(--white-color);
+                text-decoration:underline var(--secondary-color) 3px;
+            }
+        }
+
+        h2 {
+            justify-content: center;
+        }
+       
+    }
+    .item-active {  
+        background-color: #141414;
+        border-bottom: solid var(--secondary-color) 5px;
+        border-top: solid var(--secondary-color) 5px;
+        
+        h2 {
+            color: var(--white-color);
+            text-decoration:underline var(--secondary-color) 3px;
+        }
+    }
+    
+}
+
+
+.app__skills-exp-year{
+    .start-year{
+        color: var(--secondary-color);
+    }
+    .finish-year{
+        color: var(--gray-color);
+    }
+}
+
+
+.app__skills-exp-year {
+    margin-right: 3rem;
+
+    p {
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: var(--black-color);
+    }
+
+    @media screen and (max-width: 450px) {
+        margin-right: 1rem;
+    }
+}
+
+.skills-tooltip {
+    max-width: 300px !important;
+    background-color: var(--black-color) !important;
+    box-shadow: 0 0 15px rgba($color: #828282, $alpha: 0.2) !important;
+    border-radius: 5px !important;
+    padding: 1rem !important;
+    color: var(--white-color) !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+    opacity: 1 !important;
+
+
+    @media screen and (min-width: 2000px){
+         font-size: 1.5rem !important;
+         max-width: 500px !important;
+         line-height: 1.2 !important;
+    }
+}
+
