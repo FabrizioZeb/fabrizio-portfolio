@@ -8,9 +8,6 @@ const SocialMedia = () => {
   return (
     <div className="app__social">
         <div>
-            <BsYoutube />
-        </div>
-        <div>
             <BsGithub />
         </div>
         <div>

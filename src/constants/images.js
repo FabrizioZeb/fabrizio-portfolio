@@ -22,9 +22,6 @@ import javasvg from '../assets/java.svg';
 
 import bg27 from '../assets/BG27.png'
 
-import about01 from '../assets/about01.png';
-import about02 from '../assets/about02.png';
-import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
 //import about05 from '../assets/about05.html';
 
@@ -38,7 +35,7 @@ import github from'../assets/github_icon.png';
 
 import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
-import logo from '../assets/logo.png';
+
 
 
 import adidas from '../assets/adidas.png';
@@ -71,9 +68,6 @@ export default {
   javasvg,
   typescript,
   vue,
-  about01,
-  about02,
-  about03,
   about04,
   backendicon,
   backend_iconblue,
@@ -82,7 +76,6 @@ export default {
   github,
   profile,
   circle,
-  logo,
   adidas,
   amazon,
   asus,

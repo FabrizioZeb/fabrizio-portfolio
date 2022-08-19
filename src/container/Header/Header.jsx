@@ -44,7 +44,7 @@ const Header = () => {
           className="app__header-info"
         >
           <div className="app__header-badge" >
-            <a className="badge-git"href="https://github.com/FabrizioZeb">
+            <a className="badge-git"href="https://github.com/FabrizioZeb" target="_blank" rel="noreferrer">
             <div className="badge-cmp app__flex" onMouseEnter={()=>(setFace(headerIcon[1]))} onMouseLeave={()=>(setFace(headerIcon[0]))}>
               <div>
               {face.span}
@@ -72,11 +72,12 @@ const Header = () => {
           
           <motion.img
             whileInView={{ scale: [0,1]}}
-            transition={{duration: 1, ease: 'easeInOut'}}
-            src={images.bg27}
+            transition={{duration: 0.8, ease: 'easeInOut'}}
+            src={images.circle}
             alt="profile-circle"
             className="overlay_circle"
           />
+          <div/>
           {/* <div className="app__header-separation"></div> */}
         </motion.div>
         

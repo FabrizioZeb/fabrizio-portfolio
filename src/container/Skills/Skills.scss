@@ -284,11 +284,26 @@
 
 
 .app__skills-exp-year{
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: row;
+
+    .p-text {
+        font-size: 1.5rem;
+        color: var(--gray-color);
+        margin: 0 0.1rem;
+    }
+
     .start-year{
-        color: var(--secondary-color);
+        color: var(--black-color);
     }
     .finish-year{
-        color: var(--gray-color);
+        color: var(--black-color);
+    }
+
+    @media screen and (max-width: 450px) {
+        margin-right: 1rem;
+        padding: 0 2rem;
     }
 }
 
@@ -296,7 +311,7 @@
 .app__skills-exp-year {
     margin-right: 3rem;
 
-    p {
+    .p-text {
         font-size: 1.5rem;
         font-weight: 800;
         color: var(--black-color);

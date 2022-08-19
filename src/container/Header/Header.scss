@@ -270,11 +270,10 @@
 
 .app__header-img {
     flex: 1;
-    height: 80%;
+    
 
     display: flex;
     justify-content: flex-end;
-
     align-items: flex-end;
     position:sticky;
     
@@ -282,26 +281,33 @@
     img {
         width: 90%;
         height: 90%;
-        object-fit: contain;
+        object-fit:fill;
         z-index: 1;
         margin-right: 2rem;
         
     }
 
     .overlay_circle{
+        border-radius: 50%;
+        display: flex;
+        justify-content: flex-end;
         position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
         z-index: 0;
+        bottom: 0;
+        right: 0;
         width: 90%;
         height: 90%;
-        margin-left: 2rem;
-        backdrop-filter: blur(5px);
-        // box-shadow: 0 0 40px var(--neonGreen-color);
+        box-shadow: inset 0 0 50px white;
     }
 
-
+    div {
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        margin: 0 auto;
+        background-color: var(--secondary-color);
+        z-index: 10;
+    }
     // .app__header-separation{
     //     display: flex;
     //     position: absolute;

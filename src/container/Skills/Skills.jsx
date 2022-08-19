@@ -53,7 +53,7 @@ const Skills = () => {
             className="app__skills-list "
           >
             {/* Skills by type here */}
-            {['Language', 'Framework', 'Databases', 'Design'].map((item, index) => (
+            {['Languages', 'Framework', 'Databases', 'Control Version', 'Design'].map((item, index) => (
               <div
                 key={index}
                 className="app__skills-types app__flex"
@@ -172,6 +172,7 @@ const Skills = () => {
                 >
                   <div className='app__skills-exp-year'>
                     <p className='p-text start-year'>{education.yearstart}</p>
+                    <p className='p-text'> - </p>
                     <p className='p-text finish-year'>{education.yearfinish}</p>
                   </div>
                   <motion.div

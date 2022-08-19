@@ -126,8 +126,8 @@
       }
   
       &:hover {
-        background-color: var(--neonGreen-color);
-        border-color: var(--neonGreen-color);
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
   
         svg {
           color: var(--white-color);
@@ -195,25 +195,25 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background-color: #141414;
+  background-color: var(--primary-color);
   
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
-  background: rgb(168,130,221);
-background: linear-gradient(45deg,
-    rgba(168,130,221,1) 0%,
-    rgba(168,130,221,1) 20%,
-    rgba(88,255,135,1) 20%,
-    rgba(88,255,135,1) 40%,
-    rgba(168,130,221,1) 40%,
-    rgba(168,130,221,1) 60%,
-    rgba(88,255,135,1) 60%, 
-    rgba(88,255,135,1) 80%, 
-    rgba(168,130,221,1) 80%);
-  border-radius: 10px;
+  background: var(--gray-color);
+// background: linear-gradient(45deg,
+//     rgba(168,130,221,1) 0%,
+//     rgba(168,130,221,1) 20%,
+//     rgba(88,255,135,1) 20%,
+//     rgba(88,255,135,1) 40%,
+//     rgba(168,130,221,1) 40%,
+//     rgba(168,130,221,1) 60%,
+//     rgba(88,255,135,1) 60%, 
+//     rgba(88,255,135,1) 80%, 
+//     rgba(168,130,221,1) 80%);
+
 }
 
 ::-webkit-scrollbar-corner{

@@ -21,7 +21,7 @@ const Navbar = () => {
       </motion.div>
       <ul className="app__navbar-links">
         {
-          ['home', 'about', 'work', 'skils', 'testimonials', 'contact'].map((item) => (
+          ['home', 'about', 'work', 'skills', 'testimonials', 'contact'].map((item) => (
             <li className="app__flex p_text" key={`link-${item}`}>
               <div />
               <a href={`#${item}`}>{item}</a>
@@ -35,15 +35,15 @@ const Navbar = () => {
         {
           toggle && (
             <motion.div
-              whileInView={{ x: [300, 0] }}
+              whileInView={{ x: [0, -300] }}
               transition={{ duration: 0.7, ease: 'ease-out' }}
             >
               <HiX onClick={() => setToggle(false)} />
               <ul className="app__navbar-links">
               {
-                ['home', 'about', 'work', 'skils', 'testimonials', 'contact'].map((item) => (
+                ['home', 'about', 'work', 'skills', 'testimonials', 'contact'].map((item) => (
                   <li key={item}>
-                    <div />
+                    {/* <div /> */}
                     <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
                   </li>
                 ))
