@@ -23,7 +23,7 @@ const About = () => {
 
   return (
     <div>
-      <h2 className="head-text" style={{color: 'white'}}> Chilling <span style={{ color: "#A882DD"}}> Dev</span><br/> means <span style={{color: "#A882DD"}}>Productive dev</span>
+      <h2 className="head-text" style={{color: 'white'}}> Something <span style={{ color: "#A882DD"}}> About </span><br/> My <span style={{color: "#A882DD"}}>Strenghts</span>
       </h2>
 
       <div className="app__profiles">

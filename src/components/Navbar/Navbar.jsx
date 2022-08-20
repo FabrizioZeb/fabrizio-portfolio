@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <motion.div 
-        whileInView={{x: [-200,0]}}
+        whileInView={{x: [200,0]}}
         transition={{duration: 0.5}}
         className="app__navbar-logo"
         >
@@ -35,7 +35,7 @@ const Navbar = () => {
         {
           toggle && (
             <motion.div
-              whileInView={{ x: [0, -300] }}
+              whileInView={{ x: [300, 0] }}
               transition={{ duration: 0.7, ease: 'ease-out' }}
             >
               <HiX onClick={() => setToggle(false)} />
